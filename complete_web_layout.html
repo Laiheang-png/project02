@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Web Layout</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .header {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      .main-content {
+        display: flex;
+        flex: 1;
+        padding: 1rem;
+        gap: 20px;
+      }
+      .content-left {
+        flex: 1;
+        background-color: #ddd;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+      .content-main {
+        flex: 2;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .content-right {
+        flex: 1;
+        background-color: #ddd;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+      .footer {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Complete Web Layout</h1>
+      </header>
+      <div class="main-content">
+        <aside class="content-left">
+          <h2>Left Sidebar</h2>
+          <p>This is the left sidebar content.</p>
+        </aside>
+        <main class="content-main">
+          <h2>Main Content Area</h2>
+          <p>
+            This is the main content area where the primary information will be
+            displayed.
+          </p>
+        </main>
+        <aside class="content-right">
+          <h2>Right Sidebar</h2>
+          <p>This is the right sidebar content.</p>
+        </aside>
+      </div>
+      <footer class="footer">
+        &copy; 2024 Complete Web Layout. All rights reserved.
+      </footer>
+    </div>
+  </body>
+</html>

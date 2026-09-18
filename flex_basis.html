@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex Basis & Flex Shorthand</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 20px;
+        background: #0e4bda;
+        border-radius: 10px;
+        border: 1px solid #2152c4;
+      }
+      .card {
+        flex: 1 1 250px; /* grow: 1, shrink: 1, basis: 250px */
+        background: #bd0ea3;
+        border: 1px solid #12842c;
+        border-radius: 8px;
+        padding: 20px;
+        min-height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+      <div class="card">Card 4</div>
+    </div>
+  </body>
+</html>
